@@ -1,8 +1,17 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  font-family: 'Montserrat', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+body.dark{
+  background-color: #10291D;
+  color: #F7F7F7;
+}
+
+
+body.dark div#headning{
+
+}
+
+#heading {
+
 }
