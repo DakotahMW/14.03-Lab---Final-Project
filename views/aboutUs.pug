@@ -3,7 +3,9 @@ extends layout
 block content
     div(id='heading')
         if mode == 'dark'
-            a(href='/light') 
+            a(href='/dark') 
+                div Home
+            a(href='/about_us/light') 
                 div Light Mode
             a(href='/about_us/dark')
                 div About Us 
@@ -12,7 +14,9 @@ block content
             a(href='/menu/dark')
                 div Menu
         else
-            a(href='/dark')
+            a(href='/light') 
+                div Home
+            a(href='/about_us/dark')
                 div Dark Mode
             a(href='/about_us/light')
                 div About Us 
@@ -20,12 +24,8 @@ block content
                 div Comment
             a(href='/menu/light')
                 div Menu
-            
 
-    h1(id='welcome') Welcome to Downtown Donut
-    //- where Downtown Donut Logo is put in
-    if mode == 'dark'
-        img(id='main-logo-display' src="/images/" alt='Downtown Donut Logo (Dark)')
-    else
-        img(id='main-logo-display' src="/images/" alt='Downtown Donut Logo (Light)')
-    
+
+    h1(id="title-header") About Us
+
+    div(id="about-us-detail") Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum...

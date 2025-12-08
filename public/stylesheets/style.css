@@ -1,17 +1,201 @@
+/* apply montserrat font to all text, sans-serif if browser don't have montserrat*/
 * {
   font-family: 'Montserrat', sans-serif;
 }
 
+body{
+  margin: 0px;
+}
+/* background for dark mode */
 body.dark{
   background-color: #10291D;
   color: #F7F7F7;
 }
 
-
-body.dark div#headning{
-
+/* background for light mode */
+body.light{
+  background-color: #F7F7F7;
+  color: black;
 }
 
-#heading {
+/* header display on top of every page*/
+div#heading{
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
 
+/* tab of each header */
+div#heading div{
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+/* remove default property of hyper link*/
+div#heading a{
+  color: inherit;
+  text-decoration: none;
+}
+
+/* dark mode property for header tab*/
+body.dark div#heading div{
+  border: 1px solid #F7C64A;
+}
+
+
+body.dark div#heading div:hover{
+  background-color: #F7C64A;
+}
+
+body.dark div#heading div:active{
+  background-color: transparent;
+}
+
+
+/* light mode property for header tab*/
+body.light div#heading div{
+  border: 1px solid #10291D;
+}
+
+body.light div#heading div:hover{
+  background-color: #10291D;
+  color: #F7F7F7;
+}
+
+body.light div#heading div:active{
+  background-color: transparent;
+  color: black;
+}
+
+/* dark mode property for header */
+body.dark div#heading{
+  border: 5px solid #F7C64A;
+}
+
+/* light mode property for header */
+body.light div#heading{
+  border: 5px solid #10291D;
+}
+
+/*welcome id css attribute */
+#welcome{
+  text-align: center;
+  font-family: 'Italianno', 'Times New Roman', Times, serif;
+}
+
+/*main logo display*/
+#main-logo-display{
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+}
+
+/*title to display for different page*/
+#title-header{
+  font-family: 'Italianno', 'Times New Roman', Times, serif;
+  margin-left: 20px;
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+/* container id for description about us*/
+#about-us-detail{
+  width: 70%;
+  padding: 40px;
+}
+body.dark #about-us-detail{
+  border: 5px solid #F7C64A;
+}
+
+body.light #about-us-detail{
+  border: 5px solid #10291D;
+}
+
+
+/*container id for comment section*/
+#comment-section{
+  width: 70%;
+  padding: 40px;
+}
+
+body.dark #comment-section{
+  border: 5px solid #F7C64A;
+}
+
+body.light #comment-section{
+  border: 5px solid #10291D;
+}
+
+/* container id for posting comment*/
+#comment-form {
+  margin: 5px 5px 60px 5px;
+}
+
+#comment-form textarea[name='comment']{
+  margin-right: 10px;
+  width: 40%;
+  height: 60px;
+  resize: none;
+}
+
+#comment-form button[type='submit']{
+  width: 60px;
+  height: 30px;
+  background-color: transparent;
+}
+
+body.dark #comment-form button[type='submit']{
+  border: 1px solid #F7C64A;
+  color: #F7F7F7;
+}
+
+body.dark #comment-form button[type='submit']:hover{
+  background-color: #F7C64A;
+}
+
+body.dark #comment-form button[type='submit']:active{
+  background-color: transparent;
+}
+
+body.light #comment-form button[type='submit']{
+  border: 1px solid #10291D;
+  color: black;
+}
+
+body.light #comment-form button[type='submit']:hover{
+  background-color: #10291D;
+  color: #F7F7F7;
+}
+
+body.light #comment-form button[type='submit']:active{
+  background-color: transparent;
+  color: black;
+}
+
+#comment-section ul li{
+  list-style-type: none;
+  margin: 20px auto;
+}
+
+/* container id for menu section*/
+#menu-section{
+  width: 70%;
+  padding: 40px;
+}
+
+body.dark #menu-section{
+  border: 5px solid #F7C64A;
+}
+
+body.light #menu-section{
+  border: 5px solid #10291D;
+}
+
+#menu-section ul li{
+  list-style-type: none;
+  margin: 20px auto;
 }

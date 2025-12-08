@@ -1,0 +1,42 @@
+extends layout
+
+block content
+    div(id='heading')
+        if mode == 'dark'
+            a(href='/dark') 
+                div Home
+            a(href='/comments/light') 
+                div Light Mode
+            a(href='/about_us/dark')
+                div About Us 
+            a(href='/comments/dark')
+                div Comment
+            a(href='/menu/dark')
+                div Menu
+        else
+            a(href='/light') 
+                div Home
+            a(href='/comments/dark')
+                div Dark Mode
+            a(href='/about_us/light')
+                div About Us 
+            a(href='/comments/light')
+                div Comment
+            a(href='/menu/light')
+                div Menu
+
+
+    h1(id="title-header") Comment
+
+    
+    div(id='comment-section')
+        form(id='comment-form' method='POST' action='/comments/post')
+            input(type='hidden' name='mode' value=mode)
+            textarea(type='text' name='comment' maxlength='255' required)
+            button(type='submit') post
+        
+        ul
+            each val in comments.reverse()
+                li= val.detail
+                
+
