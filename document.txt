@@ -39,3 +39,14 @@
         - main setup for running website
     
 comment are in each file to explain more
+
+- directory for each page
+
+    - / -> home page (redirect to /light)
+    - /(mode) -> home page
+    
+    - /about_us/(mode) -> about_us page
+    - /comments/(mode) -> comment page
+    - /menu/(mode) -> menu page
+
+    -(mode): value are either "light" or "dark"
