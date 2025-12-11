@@ -1,6 +1,8 @@
+//- layout of the menu page
 extends layout
 
 block content
+    //- Heading on top of the page
     div(id='heading')
         if mode == 'dark'
             a(href='/dark') 
@@ -25,9 +27,9 @@ block content
             a(href='/menu/light')
                 div Menu
 
-
     h1(id="title-header") Menu
 
+    //- where menu are included
     div(id='menu-section')
         ul
             li item1 - $0.00

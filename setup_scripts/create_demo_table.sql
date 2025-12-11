@@ -1,3 +1,0 @@
-CREATE DATABASE IF NOT EXISTS cs208demo;
-
-USE cs208demo;

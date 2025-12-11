@@ -1,6 +1,8 @@
+//- layout of the comments page
 extends layout
 
 block content
+    //- Heading on top of the page
     div(id='heading')
         if mode == 'dark'
             a(href='/dark') 
@@ -28,14 +30,16 @@ block content
 
     h1(id="title-header") Comment
 
-    
+
     div(id='comment-section')
+        //- where users can post their comments 
         form(id='comment-form' method='POST' action='/comments/post')
             input(type='hidden' name='mode' value=mode)
             textarea(type='text' name='comment' maxlength='255' required)
             button(type='submit') post
         
         ul
+            //- automatically include comments in
             each val in comments.reverse()
                 li= val.detail
                 

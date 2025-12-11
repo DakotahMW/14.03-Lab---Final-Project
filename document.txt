@@ -1,0 +1,39 @@
+- step for setting up database
+    - run ./setup_scripts/install_db.sh
+    
+    -input with following question
+        - Switch to unix_socket authentication [Y/n] n
+        - Change the root password? [Y/n] Y
+        - Set the password to 12345
+        - Remove anonymous users? [Y/n] Y
+        - Disallow root login remotely? [Y/n] Y
+        - Remove test database and access to it? [Y/n] Y
+        - Reload privilege tables now? [Y/n] Y
+
+    - run sudo mysql -u root -p < ./setup_scripts/create_comments_table.sql
+        - This will create downtownDonut database and comments tables
+
+    - run npm install
+
+    - run npm start
+
+
+
+
+- file purpose
+
+    - db.js
+        - connecting to the database
+    - www
+        - listening to http request and response
+    
+    - index.js
+        - manage different http request and address
+
+    - create_comments_table.sql
+        - create downtownDonut database and comments table
+    
+    - app.js
+        - main setup for running website
+    
+comment are in each file to explain more

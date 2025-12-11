@@ -53,8 +53,7 @@ function menuMode(mode){
  router.get('/light', homeMode('light'));
  router.get('/dark', homeMode('dark'));
 
- // manage about us page
-
+ /* manage about us page */
  router.get('/about_us/light', aboutUsMode('light'));
  router.get('/about_us/dark', aboutUsMode('dark'));
 
